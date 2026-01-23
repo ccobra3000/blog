@@ -1,28 +1,15 @@
 # The Site Configuration
 
-# Import the theme
 theme: jekyll-theme-chirpy
-
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
 lang: en
-
-# Change to your timezone › https://zones.arilyn.cc
 timezone: America/Chicago
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
 title: ccobra3000 blog
-
 tagline: Project updates
-
 description: Project updates for random work done by ccobra3000
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://ccobra3000.github.io/githubio/"
+url: "https://ccobra3000.github.io"
 
 github:
   username: ccobra3000
@@ -37,14 +24,14 @@ theme_mode: dark
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: "avatar.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
-toc: true
+toc: false
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
@@ -77,9 +64,9 @@ assets:
     env: # [development | production]
 
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  enabled: false # The option for PWA feature (installable)
   cache:
-    enabled: true # The option for PWA offline cache
+    enabled: false # The option for PWA offline cache
     # Paths defined here will be excluded from the PWA cache.
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
@@ -89,7 +76,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "https://ccobra3000.github.io/githubio/"
+baseurl: "https://ccobra3000.github.io/blog/"
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -117,7 +104,7 @@ defaults:
     values:
       layout: post
       comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
+      toc: false # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
       permalink: /posts/:title/
